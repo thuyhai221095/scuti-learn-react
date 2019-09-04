@@ -3,12 +3,14 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
-import coursesPage from './components/course/coursesPage';
+import Counter from './components/Counter';
+import CoursesPage from './components/course/CoursesPage';
 
 export default (
     <Route path="/" component={App}>
         <IndexRoute component={HomePage}/>
-        <Route path="/courses" component={coursesPage}/>
         <Route path="/about" component={AboutPage}/>
+        <Route path="/counter" component={Counter}/>
+        <Route path="/course" component={CoursesPage}/>
     </Route>
 );
